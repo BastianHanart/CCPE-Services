@@ -1,0 +1,188 @@
+{
+  "convention": {
+    "nom": "Transition écologique, Économie circulaire & Énergie",
+    "champs_intervention": [
+      "Mise en oeuvre de la transition écologique territoriale",
+      "Collecte, tri et traitement des déchets ménagers assimilés",
+      "Développement des énergies renouvelables",
+      "Sobriété énergétique et efficacité énergétique",
+      "Adaptation au changement climatique",
+      "Accompagnement des communes et des acteurséconomiques",
+      "Stratégies environnementales transversales (PCAET, CRTE)"
+    ]
+  },
+  "kpis": {
+    "déchets": {
+      "valeur": "? ",
+      "unite": "kg/hab",
+      "delta": "?",
+      "label": "Tonnage de déchets ménagers résiduels colléctés",
+      "sous_label": "cette année"
+    },
+    "service_dechet": {
+      "valeur": "? ",
+      "unite": "€/hab",
+      "delta": "? ",
+      "label": "Coût net du service déchets / habitant",
+      "sous_label": "En 2026"
+    },
+    "conso_enr": {
+      "valeur": "? ",
+      "unite": "kWh",
+      "delta": "?",
+      "label": "Consommation énergétique du patrimoine",
+      "sous_label": "cette année"
+    },
+    "nbr_projets": {
+      "valeur": "? ",
+      "unite": "projet enr",
+      "delta": "?",
+      "label": "Nombre de projets énergie renouvelables",
+      "sous_label": "En 2026"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Candidature ‘100 Territoires d’éléctrification’",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "date": "Dossier déposé / instruction",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 2,
+      "nom": "Mise en oeuvre du PCAET",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 3,
+      "nom": "Mise en oeuvre du PLPDMA",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE / Partenaires"
+    },
+    {
+      "id": 4,
+      "nom": "Optimisation de la collecte des déchets",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Étude / Mise en oeuvre",
+      "responsable": "Service déchets"
+    },
+    {
+      "id": 5,
+      "nom": "Développement de projets d’énergies renouvelables",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Étude",
+      "responsable": "CCPE / Partenaires"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Nicolas Monnehay"
+    },
+    {
+      "poste": "Assistante équipement publics et gestion des déchets",
+      "statut": "Laurianne Ducrot"
+    },
+    {
+      "poste": "Charge de mission gestion des déchets",
+      "statut": "Anaïs Blickx-Le Goallec"
+    },
+    {
+      "poste": "Ambassadeur du tri",
+      "statut": "Corentin Pouchet"
+    },
+    {
+      "poste": "Chargé des bâtiments et des voiries",
+      "statut": "Jean-Michel Lequeux"
+    },
+    {
+      "poste": "Agent technique polyvalent",
+      "statut": "Denis Vaucelle"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

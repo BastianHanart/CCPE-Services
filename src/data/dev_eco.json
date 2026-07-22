@@ -1,0 +1,159 @@
+{
+  "convention": {
+    "nom": "Développement économique - Attractivité & emplois",
+    "champs_intervention": [
+      "Définition et mise en oeuvre de la stratégie de développement économique intercommunale",
+      "Soutien aux entreprises (création, implémentation …)",
+      "Aménagement et gestion des Z.A.E",
+      "Attractivité économique et promotion du territoire",
+      "Économie de proximité, artisanat, commerce et services",
+      "Relations avec les acteurs économiques institutionnels et consulaires"
+    ]
+  },
+  "kpis": {
+    "emplois_crées": {
+      "valeur": "?",
+      "unite": "emplois",
+      "delta": "?",
+      "label": "Nombre d’emplois crées ou maintenus",
+      "sous_label": "sur l’année en cours"
+    },
+    "surface_dispo": {
+      "valeur": "?",
+      "unite": "ha/m²",
+      "delta": "? ",
+      "label": "Surface disponible commerciable en Z.A.",
+      "sous_label": "En 2026"
+    },
+    "entreprises_accompagnées": {
+      "valeur": "?",
+      "unite": "entreprises",
+      "delta": "?",
+      "label": "Nombre d’entreprises accompagnées",
+      "sous_label": "ce trimestre"
+    },
+    "aides_economique": {
+      "valeur": "?",
+      "unite": "k€",
+      "delta": "?",
+      "label": "Montant des aides économiques mobilisées",
+      "sous_label": "cette année"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Stratégie de développement économique intercommunale",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE / Présidente"
+    },
+    {
+      "id": 2,
+      "nom": "Projet Châteauform’ / Sucrerie de Francières",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À préciser selon avancement",
+      "responsable": "CCPE / SAF"
+    },
+    {
+      "id": 3,
+      "nom": "Programme de soutien à l’industrie",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE / TI"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Emilie Auvray"
+    },
+    {
+      "poste": "Chargée Mission Urbanisme",
+      "statut": "Sandra Denizart"
+    },
+    {
+      "poste": "Instructrice urbanisme et animatrice habitat",
+      "statut": "Virginie Colinet"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

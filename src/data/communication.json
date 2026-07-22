@@ -1,0 +1,156 @@
+{
+  "convention": {
+    "nom": "Culture, animation territoriale et communication",
+    "champs_intervention": [
+      "Politique culturelle intercommunale",
+      "Soutien aux évenements et à l’animation territoriale",
+      "Valorisation du patrimoine et de l’identité locale",
+      "Stratégie de communication institutionnelle",
+      "Attractivité et image du territoire",
+      "Relations avec les acteurs culturels et associatifs",
+      "Communication interne et externe"
+    ]
+  },
+  "kpis": {
+    "Spectacle": {
+      "valeur": "?",
+      "unite": "spectacles",
+      "delta": "?",
+      "label": "Nombre spectacles culturels",
+      "sous_label": "Ce semestre"
+    },
+    "Frequentation": {
+      "valeur": "?",
+      "unite": "visiteurs",
+      "delta": "? ",
+      "label": "Fréquentation Spectacle culturels",
+      "sous_label": "Ce premier semestre"
+    },
+    "Audience": {
+      "valeur": "? ",
+      "unite": "vues / abonnées",
+      "delta": "?",
+      "label": "Audience des supports de communication",
+      "sous_label": "Ce mois"
+    },
+    "Publication": {
+      "valeur": "?",
+      "unite": "publications",
+      "delta": "?",
+      "label": "Nombre de publications",
+      "sous_label": "En juillet"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Stratégie de communication institutionnelle CCPE",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "Service Communication"
+    },
+    {
+      "id": 2,
+      "nom": "Programme d’animation territoirale",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "Annuelle",
+      "responsable": "CCPE / communes / associations"
+    },
+    {
+      "id": 3,
+      "nom": "Valorisation du patrimoine local",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Marion Weber-Massenat"
+    },
+    {
+      "poste": "Chargée de communication",
+      "statut": "Emilie Pauchet"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "halte_garderie",
+    "nom": "Halte Garderie",
+    "sous_titre": "Petite enfance",
+    "couleur": "#F28100",
+    "couleur_claire": "#FFE8A3",
+    "actif": true
+  },
+  {
+    "id": "dev_eco",
+    "nom": "Développement économique",
+    "sous_titre": "",
+    "couleur": "#00C9A2",
+    "couleur_claire": "#C2FFE9",
+    "actif": true
+  },
+  {
+    "id": "mobilite",
+    "nom": "Mobilité",
+    "sous_titre": "",
+    "couleur": "#0EA5E9",
+    "couleur_claire": "#E0F2FE",
+    "actif": true
+  },
+  {
+    "id": "dechet",
+    "nom": "Équipement publics",
+    "sous_titre": "Gestion des déchets",
+    "couleur": "#149600",
+    "couleur_claire": "#A0FF99",
+    "actif": true
+  },
+  {
+    "id": "assainissement",
+    "nom": "Assainissement",
+    "sous_titre": "Eau Potable & Gemapi",
+    "couleur": "#00BAB4",
+    "couleur_claire": "#B5FFFB",
+    "actif": true
+  },
+  {
+    "id": "finances",
+    "nom": "Finances",
+    "sous_titre": "",
+    "couleur": "#FCC805",
+    "couleur_claire": "#FFEFBA",
+    "actif": true
+  },
+  {
+    "id": "communication",
+    "nom": "Communication",
+    "sous_titre": "Cultures",
+    "couleur": "#C71900",
+    "couleur_claire": "#FFB8AD",
+    "actif": true
+  },
+  {
+    "id": "amenagement",
+    "nom": "Amenagement du territoire",
+    "sous_titre": "",
+    "couleur": "#FFBD08",
+    "couleur_claire": "#FFEAAD",
+    "actif": true
+  }
+]

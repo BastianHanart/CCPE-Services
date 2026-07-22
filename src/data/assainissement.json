@@ -1,0 +1,159 @@
+{
+  "convention": {
+    "nom": "Eau et préservation de la ressource",
+    "champs_intervention": [
+      "Gestion de l’eau potable et de l’assainissement",
+      "Protection de la ressource en eau (quantité et qualité)",
+      "Lutte contre les pollutions diffuses et ponctuelles",
+      "Gestion des ouvrages et réseaux",
+      "Sécurisation de l’approvisionnement",
+      "Sensibilisation aux usages de l’eau Coopération avec les syndicats et acteurs de bassin"
+    ]
+  },
+  "kpis": {
+    "bacteriologique": {
+      "valeur": "?",
+      "unite": "%",
+      "delta": "?",
+      "label": "Taux de conformité bactériologique de l’eau distribuée",
+      "sous_label": "cette année"
+    },
+    "physicochimique": {
+      "valeur": "?",
+      "unite": "%",
+      "delta": "? ",
+      "label": "Taux de conformité physico-chimique de l’eau distribuée",
+      "sous_label": "cette année"
+    },
+    "epuration": {
+      "valeur": "?",
+      "unite": "%",
+      "delta": "?",
+      "label": "Taux de conformité stations d’épuration",
+      "sous_label": "En 2026"
+    },
+    "Resaux": {
+      "valeur": "?",
+      "unite": "km / %",
+      "delta": "?",
+      "label": "Linéaire de réseau renouvelé",
+      "sous_label": "En 2026"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "STEP Choisy / Avrigny",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "date": "À préciser selon calendrier travaux",
+      "responsable": "CCPE / MOE"
+    },
+    {
+      "id": 2,
+      "nom": "Unité de traitement eau potable",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À préciser",
+      "responsable": "CCPE / MOE"
+    },
+    {
+      "id": 3,
+      "nom": "Programme de renouvellement de réseaux",
+      "statut": "planifie",
+      "priorite": "haute",
+      "date": "Annuelle (PPI eau)",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 4,
+      "nom": "Sécurisation de la ressource (interconnexions, secours)",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 5,
+      "nom": "Actions de sensibilisation aux économies d’eau",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Continue",
+      "responsable": "CCPE"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Benjamin Normand"
+    },
+    {
+      "poste": "Comptable",
+      "statut": "Audrey Norwood"
+    },
+    {
+      "poste": "Chargé de mission animation des aires de captage",
+      "statut": "Marie Gillet"
+    },
+    {
+      "poste": "Technicien eau et assainissement",
+      "statut": "Geoffrey Lemaitre"
+    },
+    {
+      "poste": "Contrôleur assainissement",
+      "statut": "Alexandre Dufour"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "rendement_eau": [
+    {
+      "rendement": 78
+    },
+    {
+      "rendement": 82
+    },
+    {
+      "rendement": 86
+    },
+    {
+      "rendement": 88
+    },
+    {
+      "rendement": 84
+    },
+    {
+      "rendement": 91
+    },
+    {
+      "rendement": 89
+    },
+    {
+      "rendement": 79
+    }
+  ]
+}

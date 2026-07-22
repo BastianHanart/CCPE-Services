@@ -1,0 +1,167 @@
+{
+  "convention": {
+    "nom": "Planification territoriale, aménagement et logement",
+    "champs_intervention": [
+      "Documentats de planification (SCOT, PLUIH et PLU)",
+      "Aménagement du territoire et urbanisme intercommunal",
+      "Politique de l'habitat et du logement",
+      "Équilibre territorial et attractivité résidentielle",
+      "Opérations d'aménagement",
+      "Instruction du droits des sois"
+    ]
+  },
+  "kpis": {
+    "Logement": {
+      "valeur": "?",
+      "unite": "logements",
+      "delta": "?",
+      "label": "Logements produit",
+      "sous_label": "Cette année"
+    },
+    "Consommation": {
+      "valeur": "?",
+      "unite": "ha",
+      "delta": "? ",
+      "label": "Consommation foncières annuelle (ZAN)",
+      "sous_label": "En 2026"
+    },
+    "LogementSociaux": {
+      "valeur": "?",
+      "unite": "logements",
+      "delta": "?",
+      "label": "Taux logement sociaux sur le territoire",
+      "sous_label": "En 2026"
+    },
+    "Urbanisme": {
+      "valeur": "?",
+      "unite": "autorisations",
+      "delta": "?",
+      "label": "Nombre d’autorisation d’urbanisme instruites",
+      "sous_label": "Ce trimestre"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Élaboration du PLUiH",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "date": "Dossier déposé / instruction",
+      "responsable": "CCPE / Bureau d’études"
+    },
+    {
+      "id": 2,
+      "nom": "Révision du SCOT",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "Mise en oeuvre",
+      "responsable": "CCPE / Bureau d’études"
+    },
+    {
+      "id": 3,
+      "nom": "Opérations d’aménagement",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Suivi des actions",
+      "responsable": "CCPE / communes"
+    },
+    {
+      "id": 4,
+      "nom": "Mise en oeuvre de la trajectoire ZAN",
+      "statut": "planifie",
+      "priorite": "haute",
+      "date": "Étude / Mise en oeuvre",
+      "responsable": "CCPE / État / Région"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Emilie Auvray"
+    },
+    {
+      "poste": "Chargé Mission Urbanisme",
+      "statut": "Sandra Denizart"
+    },
+    {
+      "poste": "Intructrice urbanisme et animatrice habitat",
+      "statut": "Virginie Colinet"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 104256,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 1000
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "convention": {
+    "nom": "Politiques sociales - Accompagnement des familles",
+    "champs_intervention": [
+      "Action sociale d'interêt communautaire",
+      "Petite enfance (H-G, RPE), enfance et jeunesse (CTG)",
+      "Soutient à la parentalité et à l'accompagnement des familles",
+      "Coordination avec les partenaires institutionnels et associatifs",
+      "Inclusion, lutte contre les précarités et l'isolement",
+      "Accès aux droits et aux services publics"
+    ]
+  },
+  "kpis": {
+    "enfants_accueillis": {
+      "valeur": 43,
+      "unite": "enfants",
+      "delta": "?",
+      "label": "Enfants accueillis en Halte Garderie",
+      "sous_label": "Sur l'année en cours"
+    },
+    "assistante_maternelle": {
+      "valeur": "?",
+      "unite": "A.M.",
+      "delta": "? ",
+      "label": "Nombre d’assistantes maternelles",
+      "sous_label": "Cette année"
+    },
+    "enfant_trois": {
+      "valeur": 560,
+      "unite": "enfants",
+      "delta": "?",
+      "label": "Nombre d'enfants de - 3ans",
+      "sous_label": "en 2021"
+    },
+    "place_accueil": {
+      "valeur": "?",
+      "unite": "places",
+      "delta": "?",
+      "label": "Nombre de place en accueil collectif",
+      "sous_label": "cette année"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Renouvellement / Suivi du Contrat Territorial Global",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "date": "Annuelle",
+      "responsable": "CCPE / CAF / Département"
+    },
+    {
+      "id": 2,
+      "nom": "Extension ou adaptation de l'offre Petite Enfance",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 3,
+      "nom": "Schéma territorial des solidarités",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "CCPE / CCAS / Département"
+    },
+    {
+      "id": 4,
+      "nom": "Actions de lutte contre l'isolement",
+      "statut": "en_cours",
+      "priorite": "haute",
+      "date": "Continue",
+      "responsable": "CCPE / associations"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable Relais petite enfance",
+      "statut": "Séverine Pollet"
+    },
+    {
+      "poste": "Responsable Halte Garderie",
+      "statut": "Alexia Zorzato"
+    },
+    {
+      "poste": "Assistante petite enfance",
+      "statut": "Laurie Guay"
+    },
+    {
+      "poste": "Auxiliaire puériculture",
+      "statut": "Virginie Michel"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 104256,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 1000
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

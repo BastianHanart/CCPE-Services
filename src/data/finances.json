@@ -1,0 +1,168 @@
+{
+  "convention": {
+    "nom": "Finances, stratégie budgétaire et fiscalité",
+    "champs_intervention": [
+      "Prospective financière et trajectoire budgétaire pluranuelle",
+      "Orientations budgétaires et préparation des DOB",
+      "Fiscalité locale (taux, bases, politiques d’harmonisation)",
+      "Analyse financière des compétences et services",
+      "Endettement, gestion de la dette et des investissements",
+      "Recherche de financements (subvention, fonds, contractualisations)",
+      "Optimisation  des ressources fiscales et financières"
+    ]
+  },
+  "kpis": {
+    "Fiscale": {
+      "valeur": "?",
+      "unite": "%",
+      "delta": "?",
+      "label": "Evolution recette fiscale",
+      "sous_label": "Cette année"
+    },
+    "Depense": {
+      "valeur": "?",
+      "unite": "%",
+      "delta": "? ",
+      "label": "Dépenses réelles de fonctionnement",
+      "sous_label": "En 2026"
+    },
+    "Epargne": {
+      "valeur": "?",
+      "unite": "k€",
+      "delta": "?",
+      "label": "Épargne nette",
+      "sous_label": "Sur l'année en cours"
+    },
+    "Dette": {
+      "valeur": "?",
+      "unite": "années",
+      "delta": "?",
+      "label": "Capacité de désendettement",
+      "sous_label": "En 2026"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Préparation du Débat d’Orientation Budgétaire (DOB)",
+      "statut": "planifie",
+      "priorite": "haute",
+      "date": "Annuelle (automne)",
+      "responsable": "Service finances / DGS"
+    },
+    {
+      "id": 2,
+      "nom": "Élaboration du Budget Primitif",
+      "statut": "planifie",
+      "priorite": "haute",
+      "date": "Annuelle (fin d’année/ début N+1)",
+      "responsable": "Service finances"
+    },
+    {
+      "id": 3,
+      "nom": "Stratégie pluriannuelle d’investissement (PPI)",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "À actualiser",
+      "responsable": "DGS / Services finances"
+    },
+    {
+      "id": 4,
+      "nom": "Stratégie d’optimisation fiscale",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "À définir",
+      "responsable": "Service finances / Élus"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Responsable",
+      "statut": "Valérie Volkamer"
+    },
+    {
+      "poste": "Comptable",
+      "statut": "Sophie Vernay"
+    },
+    {
+      "poste": "Comptable",
+      "statut": "Alexandra Arhur"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "occupation_mensuelle": [
+    {
+      "mois": "Jan",
+      "taux": 60
+    },
+    {
+      "mois": "Fév",
+      "taux": 65
+    },
+    {
+      "mois": "Mar",
+      "taux": 67
+    },
+    {
+      "mois": "Avr",
+      "taux": 63
+    },
+    {
+      "mois": "Mai",
+      "taux": 68
+    },
+    {
+      "mois": "Juin",
+      "taux": 74
+    },
+    {
+      "mois": "Jul",
+      "taux": 68
+    },
+    {
+      "mois": "Aoû",
+      "taux": 73
+    },
+    {
+      "mois": "Sep",
+      "taux": 47
+    },
+    {
+      "mois": "Oct",
+      "taux": 63
+    },
+    {
+      "mois": "Nov",
+      "taux": 53
+    },
+    {
+      "mois": "Déc",
+      "taux": 51
+    }
+  ]
+}

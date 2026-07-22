@@ -1,0 +1,10 @@
+Amélioration
+
+Graphiques centraux pertinants pour chaque services --> Mardi Matin
+Validité KPIS chaque services --> Mercredi Aprèm
+Barre de progression plus pertinantes --> Jeudi Matin
+Uniformité visuelle de chaques pages (taille max --> Menu déroulant si trop grand) --> Jeudi Aprèm
+Date mise à jour selon quand on à sauvergarder pour la dernière fois -- Jeudi Aprèm
+
+Trouver dans budget si information
+

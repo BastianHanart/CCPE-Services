@@ -1,0 +1,172 @@
+{
+  "convention": {
+    "nom": "Mobilités durables & Infrastructures",
+    "champs_intervention": [
+      "Mobilité du quotidien et mobilités alternatives",
+      "Infrastructures routières d'interêt communautaire",
+      "Transports collectifs et intermodalité (Hoplà ...)",
+      "Mobilités actives (vélo, marche)",
+      "Nouveaux usages (covoiturage, mobilité partagée)",
+      "Sécurité des déplacements",
+      "Coordination avec les autorités organisatrices"
+    ]
+  },
+  "kpis": {
+    "HoplaBus": {
+      "valeur": "?",
+      "unite": "voyageurs",
+      "delta": "?",
+      "label": "Fréquentation Hoplà le Bus",
+      "sous_label": "sur le mois en cours"
+    },
+    "HoplaNav": {
+      "valeur": "?",
+      "unite": "voyageurs",
+      "delta": "? ",
+      "label": "Fréquentation Hoplà la navette",
+      "sous_label": "sur le mois en cours"
+    },
+    "VeloLoue": {
+      "valeur": "?",
+      "unite": "vélos",
+      "delta": "?",
+      "label": "Nombre de vélos loués",
+      "sous_label": "sur l’année en cours"
+    },
+    "Pistes_cyclables": {
+      "valeur": "?",
+      "unite": "points",
+      "delta": "?",
+      "label": "Linéarire d’aménagement cyclables réalisés",
+      "sous_label": "En 2026"
+    }
+  },
+  "projets": [
+    {
+      "id": 1,
+      "nom": "Analyse comparative bus / transport à la demande",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "Analyse en cours",
+      "responsable": "CCPE / Keolys"
+    },
+    {
+      "id": 2,
+      "nom": "Mise en oeuvre du schéma directeur des mobilités actives",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Étude",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 3,
+      "nom": "Programme de sécurisation des infrastructures routières",
+      "statut": "planifie",
+      "priorite": "normale",
+      "date": "Programmation",
+      "responsable": "CCPE"
+    },
+    {
+      "id": 4,
+      "nom": "Développement du covoiturage et des nouveaux usages",
+      "statut": "en_cours",
+      "priorite": "normale",
+      "date": "Étude / Déploiment",
+      "responsable": "CCPE / AOM régionnale"
+    }
+  ],
+  "agents": [
+    {
+      "poste": "Chargée de mission mobilité durable",
+      "statut": "Coralie Frey"
+    }
+  ],
+  "budget": {
+    "total_alloue": 150000,
+    "total_realise": 123456,
+    "postes": [
+      {
+        "nom": "Personnel",
+        "alloue": 80000,
+        "realise": 67200
+      },
+      {
+        "nom": "Fonctionnement",
+        "alloue": 20000,
+        "realise": 18000
+      },
+      {
+        "nom": "Activitées & matériel",
+        "alloue": 28000,
+        "realise": 20200
+      },
+      {
+        "nom": "Formation",
+        "alloue": 22000,
+        "realise": 18056
+      }
+    ]
+  },
+  "frequentation": [
+    {
+      "mois": "Jan",
+      "bus": 1250,
+      "navette": 320
+    },
+    {
+      "mois": "Fév",
+      "bus": 1380,
+      "navette": 290
+    },
+    {
+      "mois": "Mar",
+      "bus": 1420,
+      "navette": 410
+    },
+    {
+      "mois": "Avr",
+      "bus": 1310,
+      "navette": 380
+    },
+    {
+      "mois": "Mai",
+      "bus": 1490,
+      "navette": 440
+    },
+    {
+      "mois": "Juin",
+      "bus": 1200,
+      "navette": 350
+    },
+    {
+      "mois": "Jul",
+      "bus": 980,
+      "navette": 280
+    },
+    {
+      "mois": "Aoû",
+      "bus": 870,
+      "navette": 240
+    },
+    {
+      "mois": "Sep",
+      "bus": 1350,
+      "navette": 390
+    },
+    {
+      "mois": "Oct",
+      "bus": 1480,
+      "navette": 430
+    },
+    {
+      "mois": "Nov",
+      "bus": 1390,
+      "navette": 400
+    },
+    {
+      "mois": "Déc",
+      "bus": 1100,
+      "navette": 310
+    }
+  ]
+}
