@@ -21,7 +21,7 @@ export default function KPIMobil({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'Spectacle', inverse: false },
     { key: 'Frequentation', inverse: false },
-    { key: 'Audience', inverse: true },
+    { key: 'Audience', inverse: false },
     { key: 'Publication', inverse: false },
   ]
 

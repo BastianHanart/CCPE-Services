@@ -56,7 +56,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "Annuelle",
-      "responsable": "CCPE / communes / associations"
+      "responsable": "CCPE / communes / associations",
+      "progression": 64
     },
     {
       "id": 3,
@@ -103,54 +104,38 @@
       }
     ]
   },
-  "occupation_mensuelle": [
+  "Nombre": [
     {
-      "mois": "Jan",
-      "taux": 60
+      "annee": 2019,
+      "rendement": 15900
     },
     {
-      "mois": "Fév",
-      "taux": 65
+      "annee": 2020,
+      "rendement": 10300
     },
     {
-      "mois": "Mar",
-      "taux": 67
+      "annee": 2021,
+      "rendement": 24875
     },
     {
-      "mois": "Avr",
-      "taux": 63
+      "annee": 2022,
+      "rendement": 20043
     },
     {
-      "mois": "Mai",
-      "taux": 68
+      "annee": 2023,
+      "rendement": 18756
     },
     {
-      "mois": "Juin",
-      "taux": 74
+      "annee": 2024,
+      "rendement": 19002
     },
     {
-      "mois": "Jul",
-      "taux": 68
+      "annee": 2025,
+      "rendement": 15678
     },
     {
-      "mois": "Aoû",
-      "taux": 73
-    },
-    {
-      "mois": "Sep",
-      "taux": 47
-    },
-    {
-      "mois": "Oct",
-      "taux": 63
-    },
-    {
-      "mois": "Nov",
-      "taux": 53
-    },
-    {
-      "mois": "Déc",
-      "taux": 51
+      "annee": 2026,
+      "rendement": 7867
     }
   ]
 }

@@ -47,7 +47,8 @@
       "statut": "en_cours",
       "priorite": "haute",
       "date": "À préciser selon calendrier travaux",
-      "responsable": "CCPE / MOE"
+      "responsable": "CCPE / MOE",
+      "progression": 78
     },
     {
       "id": 2,
@@ -55,7 +56,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "À préciser",
-      "responsable": "CCPE / MOE"
+      "responsable": "CCPE / MOE",
+      "progression": 39
     },
     {
       "id": 3,
@@ -71,7 +73,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "À définir",
-      "responsable": "CCPE"
+      "responsable": "CCPE",
+      "progression": 42
     },
     {
       "id": 5,
@@ -132,27 +135,35 @@
   },
   "rendement_eau": [
     {
+      "annee": 2019,
       "rendement": 78
     },
     {
+      "annee": 2020,
       "rendement": 82
     },
     {
+      "annee": 2021,
       "rendement": 86
     },
     {
+      "annee": 2022,
       "rendement": 88
     },
     {
+      "annee": 2023,
       "rendement": 84
     },
     {
+      "annee": 2024,
       "rendement": 91
     },
     {
+      "annee": 2025,
       "rendement": 89
     },
     {
+      "annee": 2026,
       "rendement": 79
     }
   ]

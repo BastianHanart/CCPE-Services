@@ -1,24 +1,29 @@
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ReferenceLine, ResponsiveContainer, Cell } from 'recharts'
 
-const CustomTooltip = ({ active, payload, label }) => {
-  if (active && payload && payload.length) {
-    return (
-      <div className="bg-white border border-gray-100 rounded-xl shadow-lg px-3 py-2 text-sm">
-        <div className="font-semibold text-gray-700 mb-0.5">{label}</div>
-        <div className="font-bold" style={{ color: '#8B5CF6' }}>{payload[0].value} % d'occupation</div>
-      </div>
-    )
-  }
-  return null
-}
+export default function OccupationChart({ titre, data, couleur, couleur_claire }) {
 
-export default function OccupationChart({ data, couleur, couleur_claire }) {
+  const MOYENNE = data.reduce((somme, entry) => somme + entry.taux, 0) / data.length
+
+  const CustomTooltip = ({ active, payload, label }) => {
+    if (active && payload && payload.length) {
+      const valeur = payload[0].payload.taux
+      const couleurActive = valeur >= MOYENNE ? couleur : couleur_claire
+      return (
+        <div className="bg-white border border-gray-100 rounded-xl shadow-lg px-3 py-2 text-sm">
+          <div className="font-semibold text-gray-700 mb-0.5">{label}</div>
+          <div className="font-bold" style={{ color: couleurActive }}>{valeur} % d'occupation</div>
+        </div>
+      )
+    }
+    return null
+  }
+
   return (
     <div className="card p-5 h-full flex flex-col">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-sm font-semibold text-gray-700">Taux d'occupation mensuel Halte Garderie Itinérante</h3>
+        <h3 className="text-sm font-semibold text-gray-700">{titre}</h3>
         <div className="text-xs text-gray-400 bg-gray-50 px-2.5 py-1 rounded-lg">
-          Moyenne : <strong className="text-gray-600">62,09 %</strong>
+          Moyenne : <strong className="text-gray-600">{MOYENNE.toFixed(2)} %</strong>
         </div>
       </div>
       <div className="flex-1">
@@ -33,7 +38,7 @@ export default function OccupationChart({ data, couleur, couleur_claire }) {
               {data.map((entry, index) => (
                 <Cell
                   key={index}
-                  fill={entry.taux >= 62.09 ? couleur : couleur_claire}
+                  fill={entry.taux >= MOYENNE ? couleur : couleur_claire}
                 />
               ))}
             </Bar>

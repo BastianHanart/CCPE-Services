@@ -47,7 +47,8 @@
       "statut": "en_cours",
       "priorite": "haute",
       "date": "Dossier déposé / instruction",
-      "responsable": "CCPE / Bureau d’études"
+      "responsable": "CCPE / Bureau d’études",
+      "progression": 47
     },
     {
       "id": 2,
@@ -55,7 +56,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "Mise en oeuvre",
-      "responsable": "CCPE / Bureau d’études"
+      "responsable": "CCPE / Bureau d’études",
+      "progression": 28
     },
     {
       "id": 3,
@@ -114,54 +116,38 @@
       }
     ]
   },
-  "occupation_mensuelle": [
+  "Nombre": [
     {
-      "mois": "Jan",
-      "taux": 60
+      "annee": 2019,
+      "rendement": 209
     },
     {
-      "mois": "Fév",
-      "taux": 65
+      "annee": 2020,
+      "rendement": 145
     },
     {
-      "mois": "Mar",
-      "taux": 67
+      "annee": 2021,
+      "rendement": 191
     },
     {
-      "mois": "Avr",
-      "taux": 63
+      "annee": 2022,
+      "rendement": 187
     },
     {
-      "mois": "Mai",
-      "taux": 68
+      "annee": 2023,
+      "rendement": 185
     },
     {
-      "mois": "Juin",
-      "taux": 74
+      "annee": 2024,
+      "rendement": 170
     },
     {
-      "mois": "Jul",
-      "taux": 68
+      "annee": 2025,
+      "rendement": 165
     },
     {
-      "mois": "Aoû",
-      "taux": 73
-    },
-    {
-      "mois": "Sep",
-      "taux": 47
-    },
-    {
-      "mois": "Oct",
-      "taux": 63
-    },
-    {
-      "mois": "Nov",
-      "taux": 53
-    },
-    {
-      "mois": "Déc",
-      "taux": 51
+      "annee": 2026,
+      "rendement": 102
     }
   ]
 }

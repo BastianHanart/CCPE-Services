@@ -34,12 +34,11 @@ export default function HalteGarderie({ data, service }) {
         </div>
         <div className="col-span-3">
           <Graphique
-            data={data.occupation_mensuelle}
+            data={data.Nombre}
             couleur={service.couleur}
             couleur_claire={service.couleur_claire}
-            titre = {"test"}
-            unite = "%"
-            moyenne = {20}
+            titre = "Nombre d'emplois crées"
+            unite = "emplois"
           />
         </div>
         <div className="col-span-2">

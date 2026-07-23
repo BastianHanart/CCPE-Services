@@ -20,7 +20,7 @@ function Delta({ value, inverse = false }) {
 export default function KPIDevEco({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'Fiscale', inverse: false },
-    { key: 'Depense', inverse: false },
+    { key: 'Depense', inverse: true },
     { key: 'Epargne', inverse: false },
     { key: 'Dette', inverse: false },
   ]

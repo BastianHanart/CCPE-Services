@@ -1,6 +1,6 @@
 import KPIamenagement from './components/KPIamenagement'
 import Convention from './components/Convention'
-import OccupationChart from './components/OccupationChart'
+import Graphique from './components/GraphiqueCourbe'
 import Budget from './components/Budget'
 import Projets from './components/Projets'
 import Agents from './components/Agents'
@@ -33,10 +33,12 @@ export default function HalteGarderie({ data, service }) {
           />
         </div>
         <div className="col-span-3">
-          <OccupationChart
-            data={data.occupation_mensuelle}
+          <Graphique
+            data={data.Nombre}
             couleur={service.couleur}
             couleur_claire={service.couleur_claire}
+            titre = "Nombre de logements produit"
+            unite = "logements"
           />
         </div>
         <div className="col-span-2">

@@ -20,7 +20,7 @@ function Delta({ value, inverse = false }) {
 export default function KPIdechet({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'déchets', inverse: false },
-    { key: 'service_dechet', inverse: false },
+    { key: 'service_dechet', inverse: true },
     { key: 'conso_enr', inverse: true },
     { key: 'nbr_projets', inverse: false },
   ]

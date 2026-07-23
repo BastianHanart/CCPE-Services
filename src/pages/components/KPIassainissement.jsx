@@ -21,7 +21,7 @@ export default function KPIRow({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'bacteriologique', inverse: false },
     { key: 'physicochimique', inverse: false },
-    { key: 'epuration', inverse: true },
+    { key: 'epuration', inverse: false },
     { key: 'Resaux', inverse: false },
   ]
 

@@ -34,6 +34,7 @@ export default function HalteGarderie({ data, service }) {
         </div>
         <div className="col-span-3">
           <OccupationChart
+            titre="Taux de valorisation des déchêts"
             data={data.occupation_mensuelle}
             couleur={service.couleur}
             couleur_claire={service.couleur_claire}

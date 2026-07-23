@@ -34,6 +34,7 @@ export default function HalteGarderie({ data, service }) {
         </div>
         <div className="col-span-3">
           <OccupationChart
+            titre="Taux d'occupation mensuel Halte Garderie Itinérante"
             data={data.occupation_mensuelle}
             couleur={service.couleur}
             couleur_claire={service.couleur_claire}

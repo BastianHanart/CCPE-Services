@@ -48,7 +48,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "Analyse en cours",
-      "responsable": "CCPE / Keolys"
+      "responsable": "CCPE / Keolys",
+      "progression": 67
     },
     {
       "id": 2,
@@ -72,7 +73,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "Étude / Déploiment",
-      "responsable": "CCPE / AOM régionnale"
+      "responsable": "CCPE / AOM régionnale",
+      "progression": 35
     }
   ],
   "agents": [

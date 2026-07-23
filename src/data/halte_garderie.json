@@ -16,14 +16,14 @@
       "unite": "enfants",
       "delta": "?",
       "label": "Enfants accueillis en Halte Garderie",
-      "sous_label": "Sur l'année en cours"
+      "sous_label": "En 2025"
     },
     "assistante_maternelle": {
-      "valeur": "?",
+      "valeur": 137,
       "unite": "A.M.",
       "delta": "? ",
       "label": "Nombre d’assistantes maternelles",
-      "sous_label": "Cette année"
+      "sous_label": "Déc. 2021"
     },
     "enfant_trois": {
       "valeur": 560,
@@ -47,7 +47,8 @@
       "statut": "en_cours",
       "priorite": "haute",
       "date": "Annuelle",
-      "responsable": "CCPE / CAF / Département"
+      "responsable": "CCPE / CAF / Département",
+      "progression": 27
     },
     {
       "id": 2,
@@ -55,7 +56,8 @@
       "statut": "en_cours",
       "priorite": "normale",
       "date": "À définir",
-      "responsable": "CCPE"
+      "responsable": "CCPE",
+      "progression": 90
     },
     {
       "id": 3,
@@ -71,7 +73,8 @@
       "statut": "en_cours",
       "priorite": "haute",
       "date": "Continue",
-      "responsable": "CCPE / associations"
+      "responsable": "CCPE / associations",
+      "progression": 48
     }
   ],
   "agents": [

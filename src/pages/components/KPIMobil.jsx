@@ -21,7 +21,7 @@ export default function KPIMobil({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'HoplaBus', inverse: false },
     { key: 'HoplaNav', inverse: false },
-    { key: 'VeloLoue', inverse: true },
+    { key: 'VeloLoue', inverse: false },
     { key: 'Pistes_cyclables', inverse: false },
   ]
 

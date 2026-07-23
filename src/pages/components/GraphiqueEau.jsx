@@ -60,12 +60,18 @@ export default function RendementEauChart({ data, couleur, couleur_claire }) {
         <ResponsiveContainer width="100%" height={200}>
           <BarChart
             data={data}
-            layout="vertical"
-            margin={{ top: 0, right: 45, left: 10, bottom: 0 }}
-            barSize={20}
+            margin={{ top: 20, right: 10, left: -10, bottom: 0 }}
+            barSize={28}
           >
-            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" horizontal={false} />
+            <CartesianGrid strokeDasharray="3 3" stroke="#f0f0f0" vertical={false} />
             <XAxis
+              type="category"
+              dataKey="annee"
+              tick={{ fontSize: 10, fill: '#9ca3af' }}
+              axisLine={false}
+              tickLine={false}
+            />
+            <YAxis
               type="number"
               domain={[60, 100]}
               tick={{ fontSize: 10, fill: '#9ca3af' }}
@@ -73,29 +79,21 @@ export default function RendementEauChart({ data, couleur, couleur_claire }) {
               tickLine={false}
               tickFormatter={v => `${v}%`}
             />
-            <YAxis
-              type="category"
-              dataKey="annee"
-              tick={{ fontSize: 10, fill: '#9ca3af' }}
-              axisLine={false}
-              tickLine={false}
-              width={35}
-            />
             <Tooltip content={<CustomTooltip />} cursor={{ fill: '#f9fafb' }} />
             <ReferenceLine
-              x={SEUIL}
+              y={SEUIL}
               stroke="#EF4444"
               strokeWidth={1.5}
               strokeDasharray="4 3"
               label={{
                 value: '85 %',
-                position: 'top',
+                position: 'right',
                 fontSize: 10,
                 fill: '#EF4444',
                 fontWeight: 600,
               }}
             />
-            <Bar dataKey="rendement" radius={[0, 4, 4, 0]}>
+            <Bar dataKey="rendement" radius={[4, 4, 0, 0]}>
               {data.map((entry, index) => (
                 <Cell
                   key={index}
@@ -104,7 +102,7 @@ export default function RendementEauChart({ data, couleur, couleur_claire }) {
               ))}
               <LabelList
                 dataKey="rendement"
-                position="right"
+                position="top"
                 formatter={v => `${v} %`}
                 style={{ fontSize: 10, fontWeight: 600, fill: '#6b7280' }}
               />

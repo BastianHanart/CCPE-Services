@@ -11,6 +11,41 @@ const prioriteConfig = {
   normale: { label: 'Normale', icon: MinusCircle,   color: 'text-gray-400' },
 }
 
+// Mélange deux couleurs hexadécimales selon un ratio (0 = couleurA, 1 = couleurB)
+function interpolerCouleur(couleurA, couleurB, ratio) {
+  const hexToRgb = hex => {
+    const h = hex.replace('#', '')
+    return [
+      parseInt(h.substring(0, 2), 16),
+      parseInt(h.substring(2, 4), 16),
+      parseInt(h.substring(4, 6), 16),
+    ]
+  }
+  const [r1, g1, b1] = hexToRgb(couleurA)
+  const [r2, g2, b2] = hexToRgb(couleurB)
+  const r = Math.round(r1 + (r2 - r1) * ratio)
+  const g = Math.round(g1 + (g2 - g1) * ratio)
+  const b = Math.round(b1 + (b2 - b1) * ratio)
+  return `rgb(${r}, ${g}, ${b})`
+}
+
+function BarreProgression({ progression, couleur, couleur_claire }) {
+  const valeur = Math.max(0, Math.min(100, progression))
+  const couleurBarre = interpolerCouleur(couleur_claire, couleur, valeur / 100)
+
+  return (
+    <div className="flex items-center gap-2 w-full mt-1.5">
+      <div className="flex-1 h-1.5 rounded-full bg-gray-100 overflow-hidden">
+        <div
+          className="h-full rounded-full transition-all"
+          style={{ width: `${valeur}%`, backgroundColor: couleurBarre }}
+        />
+      </div>
+      <span className="text-xs font-semibold text-gray-500 w-8 text-right shrink-0">{valeur}%</span>
+    </div>
+  )
+}
+
 export default function Projets({ projets, couleur, couleur_claire }) {
   return (
     <div className="card p-5 h-full max-h-[40vh] flex flex-col">
@@ -46,12 +81,18 @@ export default function Projets({ projets, couleur, couleur_claire }) {
               <div className="flex-1 min-w-0">
                 <div className="text-sm font-semibold text-gray-800 truncate">{projet.nom}</div>
                 <div className="text-xs text-gray-400 truncate">{projet.description}</div>
+                {projet.statut === 'en_cours' && (
+                  <BarreProgression
+                    progression={projet.progression}
+                    couleur={couleur}
+                    couleur_claire={couleur_claire}
+                  />
+                )}
               </div>
 
               <div className="text-xs text-gray-400 shrink-0 hidden xl:block w-40 text-right truncate">
                 {projet.responsable}
               </div>
-              
               <div className="text-xs text-gray-400 shrink-0 w-36 text-right hidden lg:block">
                 {projet.date}
               </div>

@@ -5,6 +5,7 @@ import chokidar from 'chokidar'
 
 const DATA_DIR = path.resolve('data')
 const OUT_DIR = path.resolve('src/data')
+const COLLECTIVITE_PATH = path.join(DATA_DIR, 'collectivite.xlsx')
 
 function num(val) {
   if (val === undefined || val === '' || val === null) return undefined
@@ -14,6 +15,45 @@ function num(val) {
 
 function sheetToObjects(sheet) {
   return xlsx.utils.sheet_to_json(sheet, { defval: '' })
+}
+
+// ── Mise à jour automatique de la date de mise à jour ───────────────
+
+function dateDuJour() {
+  return new Date().toLocaleDateString('fr-FR', {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  })
+}
+
+function updateDateMaj() {
+  if (!fs.existsSync(COLLECTIVITE_PATH)) return
+
+  const wb = xlsx.readFile(COLLECTIVITE_PATH)
+  const sheet = wb.Sheets['collectivite']
+  if (!sheet) return
+
+  const rows = sheetToObjects(sheet)
+  const nouvelleDate = dateDuJour()
+  const dejaAJour = rows.some(r => r.cle === 'date_maj' && r.valeur === nouvelleDate)
+
+  // Si la date est déjà à jour, on n'écrit rien pour éviter une boucle inutile
+  if (dejaAJour) return
+
+  let trouve = false
+  const rowsMaj = rows.map(r => {
+    if (r.cle === 'date_maj') {
+      trouve = true
+      return { ...r, valeur: nouvelleDate }
+    }
+    return r
+  })
+  if (!trouve) rowsMaj.push({ cle: 'date_maj', valeur: nouvelleDate })
+
+  wb.Sheets['collectivite'] = xlsx.utils.json_to_sheet(rowsMaj, { skipHeader: false })
+  xlsx.writeFile(wb, COLLECTIVITE_PATH)
+  console.log(`${new Date().toLocaleTimeString('fr-FR')} — date_maj mise à jour (${nouvelleDate})`)
 }
 
 // ── Convertisseurs par fichier ──────────────────────────────────────
@@ -78,6 +118,7 @@ function convertService(wb) {
       priorite: r.priorite,
       date: r.date,
       responsable: r.responsable,
+      progression: num(r.progression),
     }))
   }
 
@@ -124,10 +165,19 @@ function convertService(wb) {
 
   if (wb.Sheets['rendement_eau']) {
     result.rendement_eau = sheetToObjects(wb.Sheets['rendement_eau']).map(r => ({
-      annee: r.mois,
+      annee: r.annee,
       rendement: num(r.rendement)
     }))
   }
+
+
+  if (wb.Sheets['Nombre']) {
+    result.Nombre = sheetToObjects(wb.Sheets['Nombre']).map(r => ({
+      annee: r.annee,
+      rendement: num(r.rendement),
+    }))
+  }
+  
 
 
   return result
@@ -165,5 +215,15 @@ fs.readdirSync(DATA_DIR)
 // Surveiller les modifications
 console.log(`Surveillance de ${DATA_DIR}/*.xlsx`)
 chokidar.watch(path.join(DATA_DIR, '*.xlsx')).on('change', filePath => {
-  setTimeout(() => convertFile(filePath), 300)
+  setTimeout(() => {
+    convertFile(filePath)
+
+    // Si ce n'est pas collectivite.xlsx qui vient de changer, on met à jour sa date.
+    // Ça déclenchera à son tour un événement 'change' sur collectivite.xlsx,
+    // qui régénérera collectivite.json avec la nouvelle date.
+    const filename = path.basename(filePath, '.xlsx')
+    if (filename !== 'collectivite') {
+      updateDateMaj()
+    }
+  }, 300)
 })

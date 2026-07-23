@@ -21,7 +21,7 @@ export default function KPIRow({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'enfants_accueillis', inverse: false },
     { key: 'assistante_maternelle', inverse: false },
-    { key: 'enfant_trois', inverse: true },
+    { key: 'enfant_trois', inverse: false },
     { key: 'place_accueil', inverse: false },
   ]
 

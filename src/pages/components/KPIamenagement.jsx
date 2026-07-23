@@ -20,7 +20,7 @@ function Delta({ value, inverse = false }) {
 export default function KPIdechet({ kpis, couleur, couleur_claire }) {
   const items = [
     { key: 'Logement', inverse: false },
-    { key: 'Consommation', inverse: false },
+    { key: 'Consommation', inverse: true },
     { key: 'LogementSociaux', inverse: false },
     { key: 'Urbanisme', inverse: false },
   ]
