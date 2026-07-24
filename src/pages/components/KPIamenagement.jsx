@@ -30,9 +30,7 @@ export default function KPIdechet({ kpis, couleur, couleur_claire }) {
       {items.map(({ key, inverse }) => {
         const d = kpis[key]
         const Icon = icons[key]
-        const valeurFormatee = key === 'budget_realise'
-          ? d.valeur.toLocaleString('fr-FR') + ' €'
-          : d.valeur.toLocaleString('fr-FR') + ' ' + d.unite
+        const valeurFormatee = key === 'budget_realise' ? d.valeur.toLocaleString('fr-FR') + ' €' : d.valeur.toLocaleString('fr-FR') + ' ' + d.unite
 
         return (
           <div key={key} className="card px-5 py-4 flex items-start gap-3">

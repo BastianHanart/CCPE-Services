@@ -1,6 +1,6 @@
 import KPIfinances from './components/KPIfinances'
 import Convention from './components/Convention'
-import OccupationChart from './components/OccupationChart'
+import DobApercu from './components/DOBapperçu'
 import Budget from './components/Budget'
 import Projets from './components/Projets'
 import Agents from './components/Agents'
@@ -33,10 +33,9 @@ export default function HalteGarderie({ data, service }) {
           />
         </div>
         <div className="col-span-3">
-          <OccupationChart
-            data={data.occupation_mensuelle}
-            couleur={service.couleur}
-            couleur_claire={service.couleur_claire}
+          <DobApercu 
+            dob={data.dob} 
+            couleur={service.couleur} 
           />
         </div>
         <div className="col-span-2">

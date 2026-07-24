@@ -95,6 +95,14 @@ function convertService(wb) {
     result.convention = conv
   }
 
+  // dob (Débat d'Orientation Budgétaire)
+  if (wb.Sheets['dob']) {
+    const rows = sheetToObjects(wb.Sheets['dob'])
+    const dob = {}
+    rows.forEach(r => { dob[r.cle] = r.valeur })
+    result.dob = dob
+  }
+
   // kpis
   if (wb.Sheets['kpis']) {
     result.kpis = {}

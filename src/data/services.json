@@ -24,7 +24,7 @@
     "actif": true
   },
   {
-    "id": "dechet",
+    "id": "equipement",
     "nom": "Équipement publics",
     "sous_titre": "Gestion des déchets",
     "couleur": "#149600",

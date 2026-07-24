@@ -1,14 +1,14 @@
 import { CheckCircle, Clock, AlertCircle, ArrowUpCircle, MinusCircle } from 'lucide-react'
 
 const statutConfig = {
-  termine:  { label: 'Terminé',  icon: CheckCircle,  color: 'text-green-600', bg: 'bg-green-50' },
-  en_cours: { label: 'En cours', icon: Clock,        color: 'text-amber-500', bg: 'bg-amber-50' },
-  planifie: { label: 'Planifié', icon: AlertCircle,  color: 'text-blue-400',  bg: 'bg-blue-50'  },
+  termine:  { label: 'Terminé', icon: CheckCircle, color: 'text-green-600', bg: 'bg-green-50' },
+  en_cours: { label: 'En cours', icon: Clock, color: 'text-amber-500', bg: 'bg-amber-50' },
+  planifie: { label: 'Planifié', icon: AlertCircle, color: 'text-blue-400', bg: 'bg-blue-50'  },
 }
 
 const prioriteConfig = {
-  haute:   { label: 'Haute',   icon: ArrowUpCircle, color: 'text-red-400' },
-  normale: { label: 'Normale', icon: MinusCircle,   color: 'text-gray-400' },
+  haute: { label: 'Haute', icon: ArrowUpCircle, color: 'text-red-400' },
+  normale: { label: 'Normale', icon: MinusCircle, color: 'text-gray-400' },
 }
 
 // Mélange deux couleurs hexadécimales selon un ratio (0 = couleurA, 1 = couleurB)
@@ -53,7 +53,7 @@ export default function Projets({ projets, couleur, couleur_claire }) {
       <div className="flex items-center justify-between mb-4 shrink-0">
         <h3 className="text-sm font-semibold text-gray-700">Projets en cours</h3>
         <div className="text-xs text-gray-400">
-          {projets.filter(p => p.statut === 'en_cours').length} actif(s) · {projets.filter(p => p.statut === 'planifie').length} planifié(s)
+          {projets.filter(p => p.statut === 'en_cours').length} actif(s) - {projets.filter(p => p.statut === 'planifie').length} planifié(s)
         </div>
       </div>
 
@@ -66,11 +66,7 @@ export default function Projets({ projets, couleur, couleur_claire }) {
           const PrioriteIcon = priorite.icon
 
           return (
-            <div
-              key={projet.id}
-              className="project-row flex items-center gap-3 p-3 rounded-xl border border-transparent hover:border-gray-100 shrink-0"
-            >
-
+            <div key={projet.id} className="project-row flex items-center gap-3 p-3 rounded-xl border border-transparent hover:border-gray-100 shrink-0">
               <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg shrink-0 w-28 ${statut.bg}`}>
                 <StatutIcon size={11} className={statut.color} />
                 <span className={`text-xs font-semibold ${statut.color}`}>{statut.label}</span>
@@ -97,8 +93,9 @@ export default function Projets({ projets, couleur, couleur_claire }) {
                 {projet.date}
               </div>
             </div>
-          )
-        })}
+            )
+          })
+        }
       </div>
 
       {/* Légende */}

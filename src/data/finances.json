@@ -11,6 +11,11 @@
       "Optimisation  des ressources fiscales et financières"
     ]
   },
+  "dob": {
+    "url": "https://youtube.com",
+    "titre": "Apperçu DOB 2026",
+    "date": "24 juillet 2026"
+  },
   "kpis": {
     "Fiscale": {
       "valeur": "?",
@@ -115,55 +120,5 @@
         "realise": 18056
       }
     ]
-  },
-  "occupation_mensuelle": [
-    {
-      "mois": "Jan",
-      "taux": 60
-    },
-    {
-      "mois": "Fév",
-      "taux": 65
-    },
-    {
-      "mois": "Mar",
-      "taux": 67
-    },
-    {
-      "mois": "Avr",
-      "taux": 63
-    },
-    {
-      "mois": "Mai",
-      "taux": 68
-    },
-    {
-      "mois": "Juin",
-      "taux": 74
-    },
-    {
-      "mois": "Jul",
-      "taux": 68
-    },
-    {
-      "mois": "Aoû",
-      "taux": 73
-    },
-    {
-      "mois": "Sep",
-      "taux": 47
-    },
-    {
-      "mois": "Oct",
-      "taux": 63
-    },
-    {
-      "mois": "Nov",
-      "taux": 53
-    },
-    {
-      "mois": "Déc",
-      "taux": 51
-    }
-  ]
+  }
 }

@@ -5,7 +5,7 @@ import services from './data/services.json'
 import halte_garderie from './data/halte_garderie.json'
 import dev_eco from './data/dev_eco.json'
 import mobilite from './data/mobilite.json'
-import dechet from './data/dechet.json'
+import equipement from './data/equipement.json'
 import assainissement from './data/assainissement.json'
 import finances from './data/finances.json'
 import communication from './data/communication.json'
@@ -26,7 +26,7 @@ const allData = {
   halte_garderie,
   dev_eco,
   mobilite,
-  dechet,
+  equipement,
   assainissement,
   finances,
   communication,
@@ -37,7 +37,7 @@ const pages = {
   halte_garderie: PageHalteGarderie,
   dev_eco: PageDevEco,
   mobilite: PageMobilite,
-  dechet: PageDechet,
+  equipement: PageDechet,
   communication: PageCommunication,
   amenagement: PageAmenagement,
   assainissement: PageAssainissement,
